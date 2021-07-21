@@ -18,7 +18,6 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import net.lachlanmckee.hilt.compose.navigation.factory.addNavigation
 import net.lachlanmckee.hilt.compose.navigation.factory.hiltNavGraphNavigationFactories
-import org.weyoung.composetest.animation.Particle
 import org.weyoung.composetest.ui.theme.ComposeTestTheme
 
 @AndroidEntryPoint
@@ -69,6 +68,12 @@ fun JetpackNavigationHiltApp() {
                     navController = navController,
                     route = "feature1",
                     label = "Particle",
+                    drawerState = scaffoldState.drawerState
+                )
+                NavigationButton(
+                    navController = navController,
+                    route = "feature2",
+                    label = "Counter",
                     drawerState = scaffoldState.drawerState
                 )
             }

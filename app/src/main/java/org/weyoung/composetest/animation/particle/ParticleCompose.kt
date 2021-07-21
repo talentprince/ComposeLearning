@@ -1,4 +1,4 @@
-package org.weyoung.composetest.animation
+package org.weyoung.composetest.animation.particle
 
 import androidx.compose.animation.core.MutableTransitionState
 import androidx.compose.animation.core.animateFloat
